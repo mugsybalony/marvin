@@ -4,7 +4,7 @@ import time
 task = datetime.datetime(2017, 04, 26, 20, 37, 50)
 tasks_completed = 0
 
-
+#this function takes user inputted time and converts it to a programmable format
 def get_next_task(i):
     global task
     global task_begin
@@ -30,6 +30,8 @@ def task_tracker():
 
     #Asks when the next task is due to be started
     task_begin = raw_input("Please set when your next task begins using this format: '2017/04/26 20:00:00' : ")
+    hourly = raw_input("Will this task be repeated hourly? Y/N: ")
+
 
     #To track when to send the follow up email
     task_end = raw_input("Please set when your next task ends using this format: '2017/04/26 20:00:00' : ")
